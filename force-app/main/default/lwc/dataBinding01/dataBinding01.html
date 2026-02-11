@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Data Bing Concept">
+        <lightning-input label="Enter Your Name" value={name} onchange={handleChange}></lightning-input>
+        <p>Hi {name}, Welcome to Lightning Web Component</p>
+    </lightning-card>
+    <lightning-card title="Concate First and Last Name">
+        <lightning-input label="Enter First Name" name="fName" onchange={handleChange01}></lightning-input>
+        <lightning-input label="Enter Last Name" name="lName" onchange={handleChange01}></lightning-input>
+        <p>Hi, {FullName}</p>
+    </lightning-card>
+        <lightning-input 
+           label="Message" 
+            value={message} 
+             data-id="newId">
+         </lightning-input>
+        <br>
+        <lightning-button label="Click Me" onclick={handleClick}></lightning-button>
+        <p> After click this Above Button is {message}</p>
+   
+</template>

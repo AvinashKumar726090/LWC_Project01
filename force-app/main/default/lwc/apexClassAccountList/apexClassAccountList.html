@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+    <template if:true={accountLists.data}>
+        <template for:each={accountLists.data} for:item="acc">
+            <div key={acc.Id}>
+                <div>Name : {acc.Name}</div>
+                <div>Phone : {acc.Phone}</div>
+            </div>
+        </template>
+</template>
+</lightning-card>
+<template if:true={accountLists.error}>
+        <p>Error loading account</p>
+    </template>
+</template>
