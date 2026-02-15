@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Query Selector All" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">  
+            <p>Query Selector All</p>
+
+            <h1>Hi {firstNamme} {lastName}</h1>
+
+            <lightning-input
+                type="text"
+                name="fName"
+                label="First Name"
+                value={firstNamme}
+                onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-input
+                type="text"
+                name="lName"
+                label="Last Name"
+                value={lastName}
+                onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-button label="Click Me" onclick={handleClick}></lightning-button>
+
+            <p>{message}</p>   
+        </div>
+    </lightning-card>
+</template>
