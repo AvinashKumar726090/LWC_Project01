@@ -6,5 +6,10 @@ public with sharing class Apex01 {
             FROM Account
             WITH SECURITY_ENFORCED
         ];
+        List<Contact> conList = [
+            SELECT Id, Name, Phone
+            FROM Contact
+            WITH SECURITY_ENFORCED
+        ];
     }
 }
