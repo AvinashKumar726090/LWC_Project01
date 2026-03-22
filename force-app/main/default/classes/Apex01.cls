@@ -11,5 +11,17 @@ public with sharing class Apex01 {
             FROM Contact
             WITH SECURITY_ENFORCED
         ];
+        // new Developer org Added
+        
+        List<AccountShare> accShareList = [
+            SELECT Id, AccountId, UserOrGroupId
+            FROM AccountShare
+            WITH SECURITY_ENFORCED
+        ];
+        List<ContactShare> conShareList = [
+            SELECT Id, ContactId, UserOrGroupId
+            FROM ContactShare
+            WITH SECURITY_ENFORCED
+        ];
     }
 }
