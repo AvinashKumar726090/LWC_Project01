@@ -3,8 +3,9 @@ import { LightningElement } from 'lwc';
 export default class DataBinding01 extends LightningElement {
     name = "Write your name"
     handleChange(event) {
-        this.name = event.target.value;
-    }
+            this.name = event.target.value;
+        }
+        // new Developer org Added
     firstName = "";
     lastName = "";
     handleChange01(event) {
