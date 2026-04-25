@@ -8,6 +8,7 @@ export default class DataBinding01 extends LightningElement {
         // new Developer org Added
     firstName = "";
     lastName = "";
+    // concate first and last name
     handleChange01(event) {
         if (event.target.label === 'Enter First Name') {
             this.firstName = event.target.value;
